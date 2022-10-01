@@ -18,10 +18,10 @@ function App() {
       <section className='sectionContainer'>
         <Navbar />
         {user ? <Chat /> : null}
-
       </section>
     </div>
   );
+  // comment 
 }
 
 export default App;
