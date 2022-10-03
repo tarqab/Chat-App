@@ -7,7 +7,8 @@ import { query, collection, orderBy, onSnapshot } from "firebase/firestore";
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
-  const scroll = useRef();
+
+  const messagesEndRef = useRef(null);
 
   const user = auth.currentUser;
   if (user) {
@@ -27,17 +28,20 @@ const Chat = () => {
     });
     return () => unsubscribe();
   }, []);
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView();
+  }, [messages]);
 
   return (
-    <>
-      <main className="flex flex-col p-[10px] relative">
+    <div>
+      <div className="flex flex-col p-[10px] mb-10 relative h-[800px] overflow-auto">
         {messages.map((item) => (
           <Message key={item.id} message={item} />
         ))}
-      </main>
-       <Sending scroll={scroll} />
-      <span ref={scroll}></span>
-    </>
+        <div ref={messagesEndRef} className=""></div>
+      </div>
+      <Sending />
+    </div>
   );
 };
 

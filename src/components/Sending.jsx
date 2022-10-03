@@ -5,7 +5,7 @@ import { auth, db } from "../firebase";
 
 console.log("uid :", auth.uid);
 
-const Sending = ({ scroll }) => {
+const Sending = () => {
   const [input, setInput] = useState("");
 
   const handleSend = async (e) => {
@@ -21,7 +21,6 @@ const Sending = ({ scroll }) => {
         timestamp: serverTimestamp(),
       });
       setInput("");
-      scroll.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 

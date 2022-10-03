@@ -5,12 +5,12 @@
 
 
 .app--Container {
- @apply max-w-[728px] mx-auto text-center
+ @apply max-w-[728px] mx-auto text-center 
 
 }
 .sectionContainer {
-    @apply flex flex-col  bg-gray-200 mt-10 shadow-xl 
-    border relative h-full
+    @apply flex flex-col bg-gray-200 mt-10 shadow-xl 
+    border relative 
 }
 
 
@@ -27,7 +27,7 @@
 /*------------- sending ------------*/
 
 .send-message {
-    @apply h-14 w-full max-w-[728px]  flex text-xl absolute 
+    @apply h-14 w-full max-w-[728px]  flex text-xl absolute bottom-0
 }
 
 .input {
