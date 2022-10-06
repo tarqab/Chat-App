@@ -1,39 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-
-
-.app--Container {
+.app {
+    @apply font-Bree
+}
+/* .app--Container {
  @apply max-w-[728px] mx-auto text-center 
 
 }
 .sectionContainer {
     @apply flex flex-col bg-gray-200 mt-10 shadow-xl 
     border relative 
-}
+} */
 
 
 /*---------- navbar ----------- */
 
 .nav-main {
-    @apply bg-green-500 h-20 flex justify-between items-center p-4
+    @apply bg-slate-800 h-20 flex justify-between items-center p-4
 }
 .navbar-top {
-    @apply text-white text-xl
+    @apply text-white text-2xl
+}
+
+
+/* ------------chat ------------- */
+
+
+.chat-layout {
+    @apply h-screen
+}
+.message-container
+{
+    @apply flex flex-col mx-auto shadow shadow-black pt-1
+    relative w-[799px] h-[800px] overflow-auto md:w-[500px] sm:w-[300px]
+
 }
 
 
 /*------------- sending ------------*/
 
+/* .message-layout {
+    @appl
+} */
 .send-message {
-    @apply h-14 w-full max-w-[728px]  flex text-xl absolute bottom-0
+    @apply max-w-[800px] w-full flex text-xl fixed bottom-0 
+    border-solid bg-gray-900 shadow shadow-black md:w-[500px] sm:w-[300px]
 }
 
 .input {
-    @apply w-full text-xl p-3 bg-gray-900 text-white outline-none border-none
+    @apply w-full text-xl p-3 h-full bg-gray-900 text-white 
+    outline-none border-none
 }
 
 .send-btn {
-    @apply w-[20%] bg-green-500 text-2xl
+    @apply w-20 h-14 bg-green-500 text-2xl 
+}
+
+
+
+/* ------------- Login ------------- */
+
+.login-layout {
+    @apply w-screen h-screen 
+    bg-[url('../src/assets/bg-login.png')] bg-center 
+}
+.login-tittle {
+    @apply text-3xl font-bold text-white pb-6
+}
+.login-container{
+    @apply h-[500px] flex justify-center items-center 
+}
+
+
+.login-btn{
+    @apply bg-green-400 w-36 h-8 rounded-lg shadow-lg shadow-green-500/50
+}
+.logout-btn {
+    @apply text-xl rounded-md text-white 
+    bg-blue-500 shadow-lg shadow-blue-500/50   
+    h-10 w-32 hover:bg-blue-800 text-center pt-1
 }

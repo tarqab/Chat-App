@@ -4,6 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      Bree: ["Bree Serif", "serif"]
+    },
+    screens : {
+      'md': {'max':'860px'},
+      'sm': {'max':'420px'},
+    },
     extend: {},
   },
   plugins: [],

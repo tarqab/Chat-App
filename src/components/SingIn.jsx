@@ -1,24 +1,18 @@
 import { GoogleAuthProvider, signInWithRedirect } from 'firebase/auth'
 import React from 'react'
-import GoogleButton from 'react-google-button'
-
 import {auth} from "../firebase"
 
 
-const style ={
-    wrapper :`felx justify-center`
-}
 
 const googleSignIn = () =>{
  const provider = new GoogleAuthProvider()
  signInWithRedirect (auth, provider)    
 }
 
-
 const SingIn = () => {
   return (
-    <div className={style.wrapper} >
-        <GoogleButton  onClick={googleSignIn}/>
+    <div className="" >
+        <button className='login-btn'  onClick={googleSignIn}>Login with google </button>
     </div>
   )
 }

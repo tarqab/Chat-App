@@ -25,7 +25,7 @@ const Sending = () => {
   };
 
   return (
-    <div>
+    <div className="message-layout">
       <form onSubmit={handleSend} className="send-message">
         <input
           className="input"

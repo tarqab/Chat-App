@@ -15,7 +15,7 @@ const Message = (props) => {
       : `${style.received}`;
 
   return (
-    <div>
+    <div className="w-full">
       <div className={`${style.message} ${messageType}`}>
         <p className={style.userName}>{props.message.name}</p>
         <p> {props.message.text}</p>

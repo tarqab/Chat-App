@@ -4,6 +4,7 @@ import Sending from "./Sending";
 import React, { useState, useEffect, useRef } from "react";
 import { auth, db } from "../firebase";
 import { query, collection, orderBy, onSnapshot } from "firebase/firestore";
+import Navbar from "./Navbar";
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -33,14 +34,16 @@ const Chat = () => {
   }, [messages]);
 
   return (
-    <div>
-      <div className="flex flex-col p-[10px] mb-10 relative h-[800px] overflow-auto">
+    <div className="chat-layout">
+      <Navbar />
+      <div className="message-container">
         {messages.map((item) => (
           <Message key={item.id} message={item} />
         ))}
-        <div ref={messagesEndRef} className=""></div>
+        <div ref={messagesEndRef} className="h-0"></div>
+       <Sending />
+    
       </div>
-      <Sending />
     </div>
   );
 };
