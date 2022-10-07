@@ -22,6 +22,6 @@ const Message = (props) => {
       </div>
     </div>
   );
-};
+}; /** hi there her is a commit */
 
 export default Message;

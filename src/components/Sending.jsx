@@ -25,7 +25,7 @@ const Sending = () => {
   };
 
   return (
-    <div className="message-layout">
+    
       <form onSubmit={handleSend} className="send-message">
         <input
           className="input"
@@ -37,7 +37,6 @@ const Sending = () => {
           Send
         </button>
       </form>
-    </div>
   );
 };
 

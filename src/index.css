@@ -34,8 +34,8 @@
 }
 .message-container
 {
-    @apply flex flex-col mx-auto shadow shadow-black pt-1
-    relative w-[799px] h-[800px] overflow-auto md:w-[500px] sm:w-[300px]
+    @apply flex flex-col mx-auto shadow shadow-black pt-1 mt-12
+    relative w-[799px] h-full overflow-auto md:w-[500px] sm:w-[300px]
 
 }
 

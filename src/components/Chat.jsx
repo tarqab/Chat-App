@@ -42,7 +42,6 @@ const Chat = () => {
         ))}
         <div ref={messagesEndRef} className="h-0"></div>
        <Sending />
-    
       </div>
     </div>
   );
