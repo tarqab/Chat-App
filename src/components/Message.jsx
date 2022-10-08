@@ -1,4 +1,3 @@
-import React, { useRef, useEffect } from "react";
 import { auth } from "../firebase";
 
 const style = {

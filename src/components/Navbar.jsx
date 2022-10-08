@@ -21,7 +21,7 @@ const Navbar = () => {
         navigate("/");
       }
     });
-  }, []);
+  }, [navigate]);
 
   return (
     <div className="nav-main">

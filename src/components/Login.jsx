@@ -1,9 +1,4 @@
 import React from "react";
-import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
-
-import GoogleButton from "react-google-button";
-
-import { auth } from "../firebase";
 import Navbar from "./Navbar"
 
 const Login = () => {
