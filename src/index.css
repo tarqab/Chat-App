@@ -6,14 +6,6 @@
 .app {
     @apply font-Bree
 }
-/* .app--Container {
- @apply max-w-[728px] mx-auto text-center 
-
-}
-.sectionContainer {
-    @apply flex flex-col bg-gray-200 mt-10 shadow-xl 
-    border relative 
-} */
 
 
 /*---------- navbar ----------- */
@@ -30,21 +22,19 @@
 
 
 .chat-layout {
-    @apply h-screen
+    @apply h-screen bg-[url('../src/assets/bg-chat.png')] bg-center
 }
 .message-container
 {
     @apply flex flex-col mx-auto shadow shadow-black pt-1 mt-12
-    relative w-[799px] h-full overflow-auto md:w-[500px] sm:w-[300px]
+    relative w-[799px] h-[1115px]  overflow-auto md:w-[500px] sm:w-[300px]
 
 }
 
 
 /*------------- sending ------------*/
 
-/* .message-layout {
-    @appl
-} */
+
 .send-message {
     @apply max-w-[800px] w-full flex text-xl fixed bottom-0 
     border-solid bg-gray-900 shadow shadow-black md:w-[500px] sm:w-[300px]
@@ -65,10 +55,10 @@
 
 .login-layout {
     @apply w-screen h-screen 
-    bg-[url('../src/assets/bg-login.png')] bg-center 
+    bg-[url('../src/assets/bg-chat.png')] bg-center 
 }
 .login-tittle {
-    @apply text-3xl font-bold text-white pb-6 md:text-2xl sm:text-base
+    @apply text-4xl font-bold  text-white pb-6 md:text-2xl sm:text-base
 }
 .login-container{
     @apply h-[500px] flex justify-center items-center 
